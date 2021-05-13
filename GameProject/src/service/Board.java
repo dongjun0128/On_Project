@@ -8,10 +8,10 @@ public class Board {
 		// TODO Auto-generated method stub
 		int menu;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("°ÔÀÓÀ» ¼±ÅÃÇÏ¼¼¿ä.");
-		System.out.println("1. ¼¼ ±ÛÀÚ ÄôÄôµû");
-		System.out.println("2. ´«Ä¡°ÔÀÓ");
-		System.out.println("3. ³¯¾¾ ±â¹İ ¾ÈÁÖ ÃßÃµ ¼­ºñ½º");
+		System.out.println("ê²Œì„ì„ ì„ íƒí•˜ì„¸ìš”.");
+		System.out.println("1. ì„¸ ê¸€ì ì¿µì¿µë”°");
+		System.out.println("2. ëˆˆì¹˜ê²Œì„");
+		System.out.println("3. ë‚ ì”¨ ê¸°ë°˜ ì•ˆì£¼ ì¶”ì²œ ì„œë¹„ìŠ¤");
 
 		menu = scan.nextInt();
 		switch(menu)
