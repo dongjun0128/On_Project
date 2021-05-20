@@ -22,7 +22,7 @@ class Player{
            }
            if(wordin.length()!=3) {
               return false;
-              // 3단어가 아니면 flase
+              // 3단어가 아니면 false
            }
            
            
@@ -35,6 +35,13 @@ class Player{
     }
     
 }
+
+/*
+class convert{
+	public String convert(String word) {
+		
+	}
+}*/
 
 public class WordGame {
    public static void main(String[] args) {
