@@ -3,38 +3,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-class Player{
-    Scanner inputword = new Scanner(System.in);
-    public String name; // 게임 참가자 이름 필드
-    public String wordin;
-    
-    
-    public String sayWord() { // 사용자로부터 단어를 입력받는 메소드
-        wordin = inputword.next(); 
-        return wordin;
-    }
-    
-    public boolean succeed(char lastChar, String word, ArrayList<String> overlap_word) { 
-        if (lastChar == wordin.charAt(0)) { //마지막 단어의 끝 문자와 사용자 입력 단어의 첫 어절이 같으면 다음 체크
-           if(overlap_word.contains(wordin)) {
-              return false;
-                // 중복된 단어가 나오면 false
-           }
-           if(wordin.length()!=3) {
-              return false;
-              // 3단어가 아니면 false
-           }
-           
-           
-           return true;
-           // 중복된 단어가 하나도 나오지 않으면 True
-        }
-        
-        else return false;
-        //마지막 단어의 끝 문자와 사용자 입력 단어의 첫 어절이 다르면 false
-    }
-    
-}
+
 
 /*
 class convert{
@@ -76,7 +45,7 @@ public class WordGame {
         
         System.out.println(play[j].name + " >> ");
         play[j].sayWord(); // 사용자의 단어 입력 받기
-        boolean continuing = play[j].succeed(lastChar,play[j].wordin,overlap_word);
+        boolean continuing = play[j].succeed_WordGame(lastChar,play[j].wordin,overlap_word);
         //1. 끝문자랑 동일하고
         //2. 중복되지않는 단어
         //3. 3글자인지 체크

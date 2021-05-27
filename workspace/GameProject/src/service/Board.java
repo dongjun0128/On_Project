@@ -9,12 +9,12 @@ public class Board {
 		int menu, people;
 		WordGame w;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("�ο��� �����ϼ��� : ");
+		System.out.println("인원수를 입력해주세요: ");
 		people = scan.nextInt();
-		System.out.println("������ �����ϼ���.");
-		System.out.println("1. �� ���� ������");
-		System.out.println("2. ��ġ����");
-		System.out.println("3. ���� ��� ���� ��õ ����");
+		System.out.println("게임을 선택해주세요");
+		System.out.println("1. 3글자 쿵쿵따");
+		System.out.println("2. 눈치게임");
+		System.out.println("3. 백종원 게임");
 
 		menu = scan.nextInt();
 		switch(menu)
