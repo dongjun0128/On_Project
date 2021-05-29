@@ -9,19 +9,19 @@ public class Board {
 		int menu, people;
 		WordGame w;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ÀÎ¿øÀ» ¼±ÅÃÇÏ¼¼¿ä : ");
+		System.out.println("ì¸ì›ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”: ");
 		people = scan.nextInt();
-		System.out.println("°ÔÀÓÀ» ¼±ÅÃÇÏ¼¼¿ä.");
-		System.out.println("1. ¼¼ ±ÛÀÚ ÄôÄôµû");
-		System.out.println("2. ´«Ä¡°ÔÀÓ");
-		System.out.println("3. ³¯¾¾ ±â¹İ ¾ÈÁÖ ÃßÃµ ¼­ºñ½º");
+		System.out.println("ê²Œì„ì„ ì„ íƒí•´ì£¼ì„¸ìš”");
+		System.out.println("1. 3ê¸€ì ì¿µì¿µë”°");
+		System.out.println("2. ëˆˆì¹˜ê²Œì„");
+		System.out.println("3. ë°±ì¢…ì› ê²Œì„");
 
 		menu = scan.nextInt();
 		switch(menu)
 		{
 		case 1:	
-			w = new WordGame(people);
-			w.start();
+			w = new WordGame();
+			//w.start();
 			break;
 		case 2:	
 			break;
